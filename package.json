@@ -1,0 +1,23 @@
+{
+  "name": "@onoya/eslint-config",
+  "version": "0.0.1",
+  "description": "My personal eslint config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onoya/eslint-config"
+  },
+  "main": "index.js",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 1",
+    "@typescript-eslint/parser": ">= 1",
+    "eslint": ">= 6",
+    "eslint-plugin-react": ">= 7",
+    "typescript": ">= 3"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Naoya Ono",
+  "license": "MIT"
+}
