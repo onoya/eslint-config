@@ -26,4 +26,12 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'react/prop-types': ['warn', { ignore: ['children', 'className'] }],
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    }
+  ],
 };
