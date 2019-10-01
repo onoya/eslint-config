@@ -10,7 +10,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   env: {
     browser: true,
   },
@@ -38,6 +38,10 @@ module.exports = {
     'react/style-prop-object': 'error',
     'react/self-closing-comp': 'error',
     'react/void-dom-elements-no-children': 'error',
+
+    // React Hooks
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
   overrides: [
     {

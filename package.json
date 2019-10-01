@@ -12,6 +12,7 @@
     "@typescript-eslint/parser": ">= 1",
     "eslint": ">= 6",
     "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 1",
     "typescript": ">= 3"
   },
   "keywords": [
