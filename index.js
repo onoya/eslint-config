@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     // Possible errors
     'no-async-promise-executor': 'warn',
+    'no-console': 'off',
     'no-extra-boolean-cast': 'off',
     'no-template-curly-in-string': 'error',
 

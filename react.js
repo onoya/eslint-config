@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './',
+    './index.js',
     'plugin:react/recommended',
   ],
   parserOptions: {
@@ -20,6 +20,7 @@ module.exports = {
     },
   },
   rules: {
+    'react/button-has-type': 'error',
     'react/jsx-curly-spacing': 'error',
     'react/destructuring-assignment': 'error',
     'react/display-name': 'off',
