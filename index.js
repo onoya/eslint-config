@@ -29,7 +29,9 @@ module.exports = {
     'array-bracket-spacing': 'error',
     'array-element-newline': ['error', 'consistent'],
     'block-spacing': 'error',
-    camelcase: ['error', { ignoreDestructuring: true }],
+    camelcase: ['error', {
+      ignoreDestructuring: true,
+    }],
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': 'error',
     'comma-style': 'error',
@@ -39,7 +41,12 @@ module.exports = {
     'func-style': ['error', 'declaration', {
       allowArrowFunctions: true,
     }],
-    indent: ['error', 2, { SwitchCase: 1 }],
+    indent: ['error', 2, {
+      // For some reason, `flatTernaryExpressions` option is not working..
+      flatTernaryExpressions: true,
+      ignoredNodes: ['ConditionalExpression'],
+      SwitchCase: 1,
+    }],
     'jsx-quotes': 'error',
     'key-spacing': 'error',
     'keyword-spacing': 'error',
@@ -49,6 +56,7 @@ module.exports = {
     'max-len': ['error', {
       code: 90,
       ignoreComments: true,
+      ignoreTemplateLiterals: true,
     }],
     'new-parens': ['error'],
     'newline-per-chained-call': ['error', {
@@ -102,8 +110,12 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
+        camelcase: 'off',
         'no-unused-vars': 'off',
-        'semi': 'off',
+        semi: 'off',
+        '@typescript-eslint/camelcase': ['error', {
+          ignoreDestructuring: true,
+        }],
         '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/explicit-function-return-type': ['error', {
           allowTypedFunctionExpressions: true,
