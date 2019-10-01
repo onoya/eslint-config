@@ -12,9 +12,7 @@ module.exports = {
   },
   plugins: ['react'],
   env: {
-    node: true,
     browser: true,
-    es6: true,
   },
   settings: {
     react: {
@@ -22,9 +20,24 @@ module.exports = {
     },
   },
   rules: {
+    'react/button-has-type': 'error',
+    'react/jsx-curly-spacing': 'error',
+    'react/destructuring-assignment': 'error',
     'react/display-name': 'off',
+    'react/jsx-equals-spacing': 'error',
+    'react/jsx-boolean-value': 'error',
+    'react/jsx-closing-bracket-location': ['error', { nonEmpty: false }],
+    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
+    'react/jsx-props-no-multi-spaces': 'error',
+    'react/jsx-tag-spacing': 'error',
+    'react/no-array-index-key': 'warn',
     'react/no-unescaped-entities': 'off',
+    'react/no-unused-state': 'error',
     'react/prop-types': ['warn', { ignore: ['children', 'className'] }],
+    'react/style-prop-object': 'error',
+    'react/self-closing-comp': 'error',
+    'react/void-dom-elements-no-children': 'error',
   },
   overrides: [
     {
