@@ -30,7 +30,12 @@ module.exports = {
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
     'react/jsx-props-no-multi-spaces': 'error',
-    'react/jsx-tag-spacing': 'error',
+    'react/jsx-tag-spacing': ['error', {
+      closingSlash: 'never',
+      beforeSelfClosing: 'always',
+      afterOpening: 'never',
+      beforeClosing: 'never',
+    }],
     'react/no-array-index-key': 'warn',
     'react/no-unescaped-entities': 'off',
     'react/no-unused-state': 'error',
