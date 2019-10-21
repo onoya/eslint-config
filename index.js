@@ -113,6 +113,7 @@ module.exports = {
       rules: {
         camelcase: 'off',
         'no-unused-vars': 'off',
+        'no-useless-constructor': 'off',
         semi: 'off',
         '@typescript-eslint/camelcase': ['error', {
           ignoreDestructuring: true,
@@ -130,6 +131,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': ['error', {
           ignoreRestSiblings: true,
         }],
+        '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/semi': 'error',
         '@typescript-eslint/type-annotation-spacing': 'error',
       },
