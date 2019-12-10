@@ -1,6 +1,6 @@
 {
   "name": "@onoya/eslint-config",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "My personal eslint config",
   "repository": {
     "type": "git",
