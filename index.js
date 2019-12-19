@@ -125,11 +125,6 @@ module.exports = {
           ignoreDestructuring: true,
         }],
         '@typescript-eslint/class-name-casing': 'error',
-        '@typescript-eslint/explicit-function-return-type': ['error', {
-          allowTypedFunctionExpressions: true,
-          allowExpressions: true,
-          allowHigherOrderFunctions: true,
-        }],
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-explicit-any': 'warn',

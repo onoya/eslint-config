@@ -20,7 +20,7 @@ module.exports = {
     },
   },
   rules: {
-    'react/button-has-type': 'error',
+    'react/button-has-type': 'warn',
     'react/jsx-curly-spacing': 'error',
     'react/destructuring-assignment': 'error',
     'react/display-name': 'off',
