@@ -8,20 +8,12 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=1",
-    "@typescript-eslint/parser": ">=1",
+    "@typescript-eslint/eslint-plugin": ">=3.0.1",
+    "@typescript-eslint/parser": ">=3.0.1",
     "eslint": ">=6",
     "eslint-plugin-react": ">=7",
-    "eslint-plugin-react-hooks": ">=1",
-    "typescript": ">=3"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.3.2",
-    "@typescript-eslint/parser": "^2.3.2",
-    "eslint": "^6.5.1",
-    "eslint-plugin-react": "^7.15.0",
-    "eslint-plugin-react-hooks": "^2.1.1",
-    "typescript": "^3.6.3"
+    "eslint-plugin-react-hooks": ">=4.0.0",
+    "typescript": ">=3.3.1"
   },
   "keywords": [
     "eslint",
